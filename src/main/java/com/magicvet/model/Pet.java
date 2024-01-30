@@ -8,6 +8,16 @@ public abstract class Pet {
     private String name;
     private String owner;
 
+    @Override
+    public String toString() {
+        return "Pet {"
+                + "type = " + type
+                + ", sex = " + sex
+                + ", age = " + age
+                + ", name = " + name
+                + "}";
+    }
+
     public String getType() {
         return type;
     }
